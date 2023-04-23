@@ -1,5 +1,5 @@
 {
-   "name": "hello-world-javascript-action",
+   "name": "package-rename-action",
    "version": "1.0.0",
    "description": "",
    "main": "index.cjs",
@@ -15,9 +15,9 @@
    "author": "",
    "license": "ISC",
    "bugs": {
-      "url": "https://github.com/jacklehamster/hello-world-javascript-action/issues"
+      "url": "https://github.com/jacklehamster/package-rename-action/issues"
    },
-   "homepage": "https://github.com/jacklehamster/hello-world-javascript-action#readme",
+   "homepage": "https://github.com/jacklehamster/package-rename-action#readme",
    "dependencies": {
       "@actions/core": "^1.9.1",
       "@actions/github": "^2.2.0",
