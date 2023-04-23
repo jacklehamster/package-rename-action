@@ -10,7 +10,7 @@ try {
 
   const fullRepository = core.getInput('repository');  
   json.name = fullRepository.split("/")[1];
-  json.repository.type.url = `git+https://github.com/${fullRepository}.git`;
+  json.repository.url = `git+https://github.com/${fullRepository}.git`;
   json.bugs.url = `https://github.com/${fullRepository}/issues`;
   json.homepage = `https://github.com/${fullRepository}#readme`;
 
