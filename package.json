@@ -1,0 +1,34 @@
+{
+   "name": "hello-world-javascript-action",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.cjs",
+   "type": "module",
+   "scripts": {
+      "test": "node index.cjs"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jacklehamster/hello-world-javascript-action.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/jacklehamster/hello-world-javascript-action/issues"
+   },
+   "homepage": "https://github.com/jacklehamster/hello-world-javascript-action#readme",
+   "dependencies": {
+      "@actions/core": "^1.9.1",
+      "@actions/github": "^2.2.0",
+      "@dobuki/recurse-directory": "^1.0.2",
+      "from": "^0.1.7",
+      "import": "^0.0.6",
+      "json-stable-stringify": "^1.0.2",
+      "md5": "^2.3.0",
+      "stringify": "^5.2.0"
+   },
+   "hello": "Hello jacklehamster/hello-world-javascript-action",
+   "mtime": "2022-12-07T09:36:30.569Z",
+   "ctime": "2022-12-07T09:36:30.569Z"
+}

@@ -1,0 +1,19 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+branding:
+  icon: 'sun'  
+  color: 'yellow'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+  file:
+    description: 'File to modify'
+    default: 'package.json'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.cjs'
