@@ -101,6 +101,11 @@ try {
   
 
   async function execute() {
+    //  read package.json
+    const packageJson = fs.readFileSync("package.json");
+    console.log(packageJson);
+
+
     const directories = fs.readdirSync(".");
     console.log(directories);
     
