@@ -4,16 +4,12 @@ branding:
   icon: 'sun'  
   color: 'yellow'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
+  repository:  # id of input
+    description: 'Repository to update'
   file:
     description: 'File to modify'
     default: 'package.json'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
 runs:
   using: 'node16'
   main: 'index.cjs'

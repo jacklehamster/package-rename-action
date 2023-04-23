@@ -10,13 +10,13 @@ jobs:
         id: hello
         uses: jacklehamster/package-rename-action@v1.00
         with:
-          repository: ${{ github.repository}}
+          repository: ${{ github.repository }}
 
       - name: Commit files # transfer the new html files back into the repository
         run: |
           git config --local user.name "jacklehamster"
           git add .
-          git diff --quiet && git diff --staged --quiet || git commit -m "Updating"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Updating repo name in package.json"
         
       - name: Push changes # push the output folder to your repo
         uses: ad-m/github-push-action@master
