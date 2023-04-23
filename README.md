@@ -13,4 +13,4 @@ None
 
 ## Example usage
 
-uses: actions/package-rename-action@v1.03
+uses: actions/package-rename-action@latest

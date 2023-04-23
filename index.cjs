@@ -2,7 +2,6 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 const fs = require("fs");
 
-
 try {
   const fileName = core.getInput('file');
   const file = fs.readFileSync(fileName);
@@ -10,8 +9,14 @@ try {
 
   const fullRepository = core.getInput('repository');  
   json.name = fullRepository.split("/")[1];
-  json.repository.url = `git+https://github.com/${fullRepository}.git`;
-  json.bugs.url = `https://github.com/${fullRepository}/issues`;
+  if (typeof json.repository === "string") {
+    json.repository = fullRepository;
+  } else if (json.repository?.url) {
+    json.repository.url = `git+https://github.com/${fullRepository}.git`;
+  }
+  if (json.bugs) {
+    json.bugs.url = `https://github.com/${fullRepository}/issues`;
+  }
   json.homepage = `https://github.com/${fullRepository}#readme`;
 
   const newJSON = JSON.stringify(json, null, "   ");
