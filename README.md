@@ -1,22 +1,16 @@
-# Hello world javascript action
+# Package Rename action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
-As a test, it also adds "Hello" in package.json.
+This action renames the repo in package.json to match the current repo.
+Useful for github templates of Node projects.
 
 ## Inputs
 
-### `who-to-greet`
-
-**Required** The name of the person to greet. Default `"World"`.
+None
 
 ## Outputs
 
-### `time`
-
-The time we greeted you.
+None
 
 ## Example usage
 
-uses: actions/hello-world-javascript-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+uses: actions/package-rename-action@v1.02
