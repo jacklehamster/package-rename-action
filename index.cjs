@@ -105,7 +105,6 @@ try {
     const packageJson = fs.readFileSync("package.json");
     console.log(packageJson);
 
-
     const directories = fs.readdirSync(".");
     console.log(directories);
     
