@@ -3,14 +3,14 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to update repo name in package.json
     steps:
       - uses: actions/checkout@v2      
-      - name: Hello world action step
+      - name: Repo rename action step
         id: hello
-        uses: jacklehamster/hello-world-javascript-action@v1.59
+        uses: jacklehamster/package-rename-action@v1.00
         with:
-          who-to-greet: ${{ github.repository}}
+          repository: ${{ github.repository}}
 
       - name: Commit files # transfer the new html files back into the repository
         run: |
