@@ -19,9 +19,9 @@ try {
   }
   json.homepage = `https://github.com/${fullRepository}#readme`;
 
-  const newJSON = JSON.stringify(json, null, "   ");
+  const newJSON = JSON.stringify(json, null, "   ") + "\n";
 
-  if (file?.trim() !== newJSON.trim()) {
+  if (file !== newJSON) {
     fs.writeFileSync(fileName, newJSON);
   }
   
