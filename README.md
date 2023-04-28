@@ -13,6 +13,6 @@ None
 
 ## Example usage
 
-uses: actions/package-rename-action@v1.04
+uses: actions/package-rename-action@v1.05
 
 see [example here](.github/workflows/main.yml)
