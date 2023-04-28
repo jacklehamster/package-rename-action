@@ -21,7 +21,7 @@ try {
 
   const newJSON = JSON.stringify(json, null, "   ");
 
-  if (file !== newJSON) {
+  if (file?.trim() !== newJSON.trim()) {
     fs.writeFileSync(fileName, newJSON);
   }
   
